@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Sample17-01A</title> 
+        <h:outputStylesheet name="mystyle.css" library="css" />
+    </h:head>
+    <h:body>
+        <h1>メッセージを表示する</h1>
+        <h:form id="formId">
+            <h:panelGrid columns="1">
+                <h:selectOneRadio value="#{bb.num}" styleClass="inp">
+                    <f:selectItem itemValue="1" itemLabel="杜子春(その1)"/>
+                    <f:selectItem itemValue="2" itemLabel="杜子春(その2)"/>
+                </h:selectOneRadio>
+                <h:inputTextarea value="#{bb.text}" cols="60" rows="10"/>
+                <h:commandButton action="#{bb.next()}" value="送信"/>
+            </h:panelGrid >            
+            <h:messages  layout="table" styleClass="msg"/>
+        </h:form>
+    </h:body>
+</html>
+
+
+

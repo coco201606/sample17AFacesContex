@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2022/06/15, 18:51:29
+    Author     : terad
+*/
+	
+/* sample08のための共通CSS */
+
+.inp {								/* チェックボックスとラジオボタン用 */
+    font-family: メイリオ ,Osaka;
+    font-size: 1.0em;
+}
+.sel {								/* リストとメニュー用 */
+    width : 70px;					/* 見やすくするため横幅を広げます */
+    font-family: メイリオ ,Osaka;
+    font-size: 1.0em;
+}
+/* 以下は全体の表示位置、フォントの指定 */
+body {
+    font-family: メイリオ ,Osaka;
+    font-size: 12pt;
+    margin: 30px;
+    line-height: 2em;
+}
+h1 {
+    font-size: 1.2em;
+}
+.msg {
+    color: red;
+    font-size: 0.7em;
+}
